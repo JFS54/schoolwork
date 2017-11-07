@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    
+<link rel="stylesheet"
+href="https://fonts.googleapis.com/css?family=Open+Sans">   
+    
+<style type="text/css">
+    
+    
+  /*Color Palette MM
+    #f9d70b - darkish gold
+    #000000	- black obvs
+    #f20505 - overall red
+    #fffff  - white
+    #f0e046 - light gold
+*/
+
+    html{
+    font-family:Open Sans;
+    background-color: #f20505;
+    }    
+    
+    
+    h1, h2, h3{
+     text-align: center;
+    }
+    
+    header{
+    background-color: white;
+    }
+    
+    nav{
+    text-align: center;
+    background-color:black;
+    }
+    
+    section{
+    margin: 10%;
+    padding: 1%;
+    background-color: white;
+    }
+    
+    
+    
+    div.partners img{
+    text-align: center;
+    width: 55%; /*7/17/1955*/
+    display: block;
+    margin: 0 auto;
+    }
+    
+    /*Inline images for Display*/
+    div.influence img{
+    display:inline-block;
+    width:  100%;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+    }    
+    
+    div.influence figure{
+    display:inline-block;
+    width: 20%;
+    text-align: center;
+    padding: 0;
+    }
+    
+    div.influence figcaption{
+    text-align: center;
+    font-size: .6em;
+    vertical-align: center;
+    }
+    
+     header{
+        border: solid black;
+    }
+    
+    nav{
+        border:solid black;
+     
+    }
+    
+    section{
+        border:solid black;
+    }
+    
+    article{
+        border:solid #f0e046;
+        padding: 1em;
+    }
+    
+    ol{
+    line-height: 1.8em;
+    }
+    
+    
+    div.ref{
+    text-align: center;
+    }
+    div.ref h3{
+    display: inline;
+    padding-left: 10%;
+    padding-right: 10%;
+    vertical-align: middle;
+    }
+    div.ref img{
+    width:5%;
+    display: inline-block;
+    vertical-align: middle;
+    }
+    
+    
+    /* Dropdown Button */
+.dropbtn {
+    background-color: #f0e046;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #f9d70b;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f0e046}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+/*Portions of CSS/JS credited to https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown.
+    
+The code looked amazing and I wanted to make the page look impressionable. Big ups W3 <3>
+    
+ 
+</style>    
+</head>
+<body>
+<main>
+
+    
+    
+<header>
+   <h1>How a Genius Shaped Entertainment</h1> 
+</header>    
+
+<nav>
+
+    
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Quick Reference</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#early">Early Life</a>
+    <a href="#Mickey">Mickey Mouse</a>
+    <a href="#ww2">World War II</a>
+    <a href="#dland">Disneyland</a>
+    <a href="#influence">Influence</a>
+    <a href="#ref">References</a>
+
+
+  </div>
+</div>
+    
+
+    
+    
+    
+</nav>
+    
+<section>
+<article>
+    
+    <h2>"All our dreams can come true, <br>if we have the courage to pursue them."<br>
+              - Walt Disney</h2>
+    
+            
+    <div class="partners"><img src="images/partners-at-dusk.jpg" alt="partners statue walt and mickey Disneyland at dusk"></div>
+    
+    <a name="early"><h3>A Born Dreamer</h3></a>
+    <p>Few have reached the momumental proportion of success met by that of Walter Elias Disney.
+    Born in a modest Chicago suburb in 1901, the second youngest of five children, Walt showed a particularly obsessive interest in the arts from an early age focusing on illustration and photography. These early aspirations of artistry would soon engrain him as one of the single-most recognised creators in history.</p>
+    
+    <p>Early in his career, Disney lost interest in his academic pursuit and decided it was time to take on greener pastures and pursue a career in art. This pursuit would take a brief hault as the young Disney would be enticed by the patriotic call of "Over There", a 1918 call to arms by George M. Cohan; encouraging young men to fight in World War 1. Initially rejected by the Navy due to his age, Disney would find himself recruited to join the Red Cross, working as an ambulance driver in France. </p>
+    
+    <h3>Written in the Stars</h3>
+    <p>Not long into his European excursion, it became clear that the Disney would be facing a warfront unlike many around him. Having caught the attention of dignitaries and high ranking military officials, Disneys ambulance skills would soon be reassigned as a tour guide around elegant locales throughout France; in an ambulance strewn with Disney illustrations. Both tourism and the beautiful French countryside would prove to be inspirations of some of his greatest life achievements.</p>
+    
+    <p>Not long after the the of the First World War, Walt Disney was right back where he'd left off, ready willing and certainaly able to get back to into focus: become a commercial illustrator. Early pursuits back home with his Brother Roy were making headway, but it wasn't enough. While Walt stayed back East, his Roy decided to head West for California, eager to make headway in Tinseltown.</p>
+    
+    <a name="Mickey"><h3>Clandestine Destiny</h3></a>
+    <p>Not long after his brother Roy, Walt sought fit to follow suit and make his way out to Hollywood. Consequently, in October of 1923 Walt and Roy Disney founded the Disney Brothers Cartoon Studios in the Los Feliz neighhorhood of Los Angeles, later to become better known under its illustrious title Walt Disney Animation Studios.</p>
+    
+    <p>After early shortcomings with Universal Picture, an early character of Walt's <em>Oswald the Lucky Rabbit</em> would be used against Walt, as Universal owned the rights of the Oswald. As a result, both his character as well as his animation staff would be retained, leaving Walt to decide his best option would be to work in secret.</p>
+    
+    <div style="text-align:center"><iframe width="560" height="315" src="https://www.youtube.com/embed/oFfloCAw1G0" frameborder="0" allowfullscreen></iframe></div>
+    
+    <p>As the Oswald productions were continuing under the direction of Universal, Disney and a small team of dedicated staffers toiled in secret, working on a little known character nameed <em>Mickey Mouse</em>, the first character by Walt to feature in sync voiceovers, a technological featuer unseen prior.</p>
+    
+    <h3>Lucky Number 7</h3>
+    <p>Following the commercial success of Disney's animated shorts new paths were being considered to take make Disney the name it yeared. Having pushed the envelope on so many fronts, Disney and his team realized it was time to shine and in early 1934, Disney and his team decided to create the <a href="http://www.imdb.com/title/tt0029583/"alt ="hyperlink snow white and the seve dwarfs internet movie database."><u>first feature animated film in history</u></a>, <em>Snow White and the Seven Dwarfs</em>.</p>
+    
+    <div style="text-align:center"><iframe width="560" height="315" src="https://www.youtube.com/embed/mhfp6Z8z1cI" frameborder="0" allowfullscreen></iframe></div>
+    
+    <p>Much to the surprise of many early skeptics, recognising the monumental risk Disney was personally taking to produce such a project, it was met with universal acclaim. It is, to this day one of the most important achievements in cinema history and adjusted for inflation, still the 10th highest grossing domestic box office release of all time.</p>
+    
+    <a name="ww2"><h3>Art on the Homefront</h3></a>
+    <p>Following continual commercial success of Disney's 1937 hit Snow White, several more would be released including <em>Pinnochio</em>, and 1940's widely acclaimed <em>Fantasia</em>. However, in the wake of Pearl Harbor, much of the focus of Disney works would turn to a more propagandized style, focusing on creating morale for the war effort. This would continue throughout the war, having profoudn success in encouraging those at home and abroad to do their part.</p>
+    
+    <p>Films were made for every branch of the military, and Walt Disney Productions was personally sought after by the U.S Government as the chief device for military training for their respective fields.</p>
+    
+    <div style="text-align:center"><iframe width="560" height="315" src="https://www.youtube.com/embed/Gb36GQO14k0" frameborder="0" allowfullscreen></iframe></div>
+    <p>The regular imagery affiliated with Disney throughout the war front would embelesh the minds of those fighting overseas. A generation of young men would come back, to build families of their own. Families that would one day find themselves willing and able to experience Disney, with what would be the greatest achievement of his life.</p>
+    
+    <a name="dland"><h3>Yesterday, Tomorrow, And Fantasy</h3></a>
+    <p>It was the late 1940's and Walt's success began to manifest into a desire to dare to greater height. He wanted to build a destination, a place for all to come and visit from the world around for both adults and children alike. Taking cues from locales such as Griffith Park and Tivoli Gardens in Denmark, it seemed clear Disney desired to build an iconic amusement park of his own.</p>
+     <div style="text-align:center"><iframe width="560" height="315" src="https://www.youtube.com/embed/2rHjoimz5XI" frameborder="0" allowfullscreen></iframe></div>
+    <p>After years of careful planning, on July 17, 1955 Disneyland opened it's gates for the first time in Anaheim California. Initially the invited guests and press, the park found itself overwhelmed with unsolicited visitors sneaking over the fence or using counterfeit tickets. Despite a hectic opening, Disneyland was met with high acclaim and much anticipation.</p>
+    
+    <h3>A Magic Kingdom</h3>
+    <p>Following the extreme success of Disneyland, Walt envisioned a second park rich with space to grow further than Anaheim could support. He'd began scouting locations in Central Florida, where land could be acquired at a fraction of the cost. In fact, the first acre of land purchased by The Walt Disney company was in the range of $80.00. This pattern would soon be caught onto however, with the final acre of land selling at over $80,000.</p>
+   
+    <p>Sadly, Walt Disney never got to see his dream come to life. Walt Elias Disney died after complications of Lung Cancer at the age of 65 in 1966, the park opening 5 years later in 1971. While he would have loved to see his dream come to life, it is without question that Disney paved the way for a ongoing, household name. The Walt Disney company remains the premier identity for entertainment in virtually every front. From their recent completion of Shanghai Disneyland, to the acquisition of Marvel and Disney. The legacy Walt Disney created has barely begun, and it all started with a mouse.</p>
+    
+</article>
+</section>
+
+<section>
+<article><a name="influence"><h2>On the Forefront</h2></a>
+<p>Few would deny the innovations an impact Walt Disney had on the world of entertainment. Here are just a few of the impressive milestones set by Disney and his team that changed the way we enjoy film and art today.</p>    
+<div class="influence">
+
+<figure><img src="images/0a48aaf507002eb1d9c2ab3eb49795c6.jpg" alt="1929 Steamboat Willy"><figcaption>1929: <em>Steamboat Willie</em> becomes the first short will full sound-synchronization.</figcaption></figure>   
+
+<figure><img src="images/snow-white-and-the-seven-dwarfs-uk-movie-poster-1937.jpg" alt="1937 Snow White Poster - Disney"><figcaption>1937: <em>Snow White and the Seven Dwarfs</em> becomes the first feature length animated film in history.</figcaption></figure>
+
+<figure><img src="images/tiki-room.jpg" alt="Tiki Room Disneyland"><figcaption>1963:<em>The Enchanted Tiki</em> becomes the first disney attraction to introduce audio-animatronics to parkgoers at Disneyland Park.</figcaption></figure>
+</div>
+
+Many of the incredible innovations developed by Disney have become industry standard. The foundations of modern cinema owe a great deal of respect to the milestones set forth by Walt Disney and his team of genuises.
+</article>
+
+</section>
+<section>
+<article><a name="ref"><div class="ref"><img src="images/Mickey_Mouse_head_and_ears.png"><h3>References:</h3><img src="images/Mickey_Mouse_head_and_ears.png"></div></a></article>    
+<ol>
+<li>
+The early days of Walt Disney venturing out to WWI gave Walt significant influence in his works to come. <a href="http://waltdisney.org/blog/over-there-walt-disneys-world-war-i-adventure" alt="early days of walt in world war 1">Click</a>
+</li>
+<li>
+Truth is, it came down to never giving up, as learned from this Entrepreneur.com article. <a href="https://www.entrepreneur.com/article/299117" alt="entrepreneur dot com, lesson learned from Walt Disney">Click</a>   
+</li>    
+<li>
+How Walt Disney was able to acquire incredible swaths of land virtually unnoticed for Walt Disney World. <a href="http://www.wdwradio.com/2005/02/wdw-history-101-how-to-buy-27000-acres-of-land-and-no-one-noticeq/" alt="walt disney radio on how twenty seven thousand acres were bought virtually unnoticed to build walt disney world"> Click</a>
+</li>    
+<li>
+Innovations created by Disney and his team that revolutionized film and entertainment forever. <a href="http://fortune.com/2014/12/29/disney-innovation-timeline/" alt="fortune dot come article on fourteen innovations by the Disney company that changed the game">Click</a>    
+</li>    
+</ol>
+</section>
+
+    
+    
+<footer>
+</footer>    
+</main>  
+    
+</body>
+
+</html>
